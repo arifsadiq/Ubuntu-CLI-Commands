@@ -38,4 +38,13 @@ sudo systemctl reload <service> : Reloads a service’s configuration without in
 
 journalctl -f : showing new log messages in real time
 
-journalctl -u <unit name> : Displays logs for a specific system
+journalctl -u [unit name] : Displays logs for a specific system
+
+# V) Cron Jobs & Scheduling
+crontab -e : Edit cron jobs for the current user
+
+crontab -l : Lists cron jobs for the current user
+
+crontab -r : Remove a cron job
+
+sudo crontab -u username -e : Edit crontab for another user
